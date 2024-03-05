@@ -1,97 +1,110 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: Anta;
+    font-family: 'Anta', sans-serif;
 }
 
-header{
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    font-family: Anta;
+    font-family: 'Anta', sans-serif;
     background-color: bisque;
+    padding: 10px;
 }
 
-header img{
-    width: 10%;
-    height: 10%;
+header img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: #000000;
-}
-
-nav a{
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 5px;
 }
 
 #Header-Right {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
-#Header-Right input{
-    width: 250px;
-    height: 50px;
+#Header-Right input {
+    width: 80%;
+    max-width: 300px;
+    height: 40px;
 }
 
 #Image {
     width: 100%;
-    height: 300px;
+    height: 200px;
 }
 
-#Image img{
+#Image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-p{
+p {
     text-align: center;
 }
 
-#Main-Info{
+#Main-Info {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
 #Servicio {
     display: flex;
-    flex-direction: row;
-    width: 50%;
-    height: 100%;
-}
-
-#Servicio-Image{
-    width: 50%;
-    height: 100%;
-}
-
-#Servicio-Image img{
+    flex-direction: column;
     width: 100%;
-    height: 10%;
-    object-fit: contain;
-    object-position: center;
+    margin-bottom: 20px;
 }
 
-h3{text-align: center;}
+#Servicio-Image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 #Servicio-Description {
-    width: 50%;
-    height: 100%;
     text-align: justify;
+    padding: 10px;
 }
 
+@media only screen and (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
 
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #Header-Right input {
+        width: 250px;
+        height: 40px;
+    }
+
+    #Main-Info {
+        flex-direction: row;
+    }
+
+    #Servicio {
+        width: 45%;
+    }
+}
 
